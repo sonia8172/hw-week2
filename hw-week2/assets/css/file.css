@@ -9,6 +9,13 @@ body{
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
+:root {
+    --primary: rgb(133, 17, 146);
+    --secondary:rgb(167, 50, 11);
+    --tertiary: rgb(240,121,82)
+    --dark: rgba(28, 29, 33, 1);
+    --light: rgba(238, 238, 247, 1);
+}
 header {
     padding: 15px 6% 15px 0;
     display: flex;
@@ -155,29 +162,46 @@ main {
     margin-bottom: 20px;
     color: black;
 }
-.About-Me {
-    margin-bottom: 32px;
-    color: #1e4bc7;
+.grid-container {
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(150px, 1fr);
 }
-.Work {
-    margin-bottom: 32px;
-    color: #1e4bc7;
+
+.grid-item {
+    border: 5px solid var(--secondary);
+    grid-column: span 4;
+    background-color: var(--primary);
+    color: var(--tertiary);
+    min-height: 100px;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 20px 0;
+    text-decoration: none;
+    background-blend-mode: soft-light;
+    background-size: 150%;
+    transition: all 0.5s;
+    font-size: 0.8rem;
 }
-.Contact-Me {
-    margin-bottom: 32px;
-    color: #1e4bc7;
+.grid-item:first-child {
+    grid-column: span 8;
+    grid-row: span 2;
 }
-.About-Me h2 {
-    margin-bottom: 10px;
-    font-size: 62px;
+
+.grid-item:hover {
+    background-color: rgba(0, 0, 0, 0.3);
 }
-.About-Me p{
-    color: rgb(3, 3, 3);
-    text-align: center;
+
+.grid-item div {
+    background-color: var(--secondary);
+    padding: 8px 10px;
 }
-.Work h2{
-    margin-bottom: 10px;
-    font-size: 62px;
+
+.grid-item h3 {
+    font-size: 1.4rem;
 }
 .contact address {
     display: flex;
@@ -219,4 +243,59 @@ footer  {
     font-size: 1.0em;
     text-align: center;
     vertical-align: bottom;
-  }
+}
+@media screen and (max-width: 980px) {
+    header {
+        padding: 0 0 10px 0;
+        justify-content: center;
+        text-align: center;
+    }
+
+    header h1 {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+        font-size: 10vw;
+    }
+
+    header nav {
+        justify-content: center;
+    }
+
+    .page-section > h2,
+    .page-section > div {
+        flex: 0 0 100%;
+    }
+
+    .page-section > h2 {
+        border-right: none;
+        border-bottom: 4px solid var(--primary);
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        text-align: left;
+        font-size: 7vw;
+    }
+
+    .hero-banner {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding-left: 50px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .grid-item,
+    .grid-item:first-child {
+        grid-column: 1 / -1;
+    }
+
+    .grid-container {
+        grid-auto-rows: minmax(200px, 1fr);
+    }
+
+    .contact address {
+        flex-direction: column;
+        align-items: center;
+    }
+}
