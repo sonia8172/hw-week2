@@ -119,9 +119,17 @@ body{
 }
 .About-Me h2 {
     margin-bottom: 10px;
-    text-align: center;
     font-size: 62px;
 }
 .About-Me p{
     color: rgb(3, 3, 3);
+    text-align: center;
+}
+.Work h2{
+    margin-bottom: 10px;
+    font-size: 62px;
+}
+.Contact-Me h2{
+    margin-bottom: 10px;
+    font-size: 62px;
 }
