@@ -120,4 +120,8 @@ body{
 .About-Me h2 {
     margin-bottom: 10px;
     text-align: center;
+    font-size: 62px;
+}
+.About-Me p{
+    color: rgb(3, 3, 3);
 }
