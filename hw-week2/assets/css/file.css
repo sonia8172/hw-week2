@@ -4,7 +4,7 @@
     padding: 0;
 }
 body{
-    background-color: #8dc753;
+    background-color: #ffffff;
 }
 .header{
     padding: 20px;
@@ -107,15 +107,15 @@ body{
 }
 .About-Me {
     margin-bottom: 32px;
-    color: #18d4d4;
+    color: #1e4bc7;
 }
 .Work {
     margin-bottom: 32px;
-    color: #ffffff;
+    color: #1e4bc7;
 }
 .Contact-Me {
     margin-bottom: 32px;
-    color: #ffffff;
+    color: #1e4bc7;
 }
 .About-Me h2 {
     margin-bottom: 10px;
