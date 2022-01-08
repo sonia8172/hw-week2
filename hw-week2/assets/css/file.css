@@ -62,9 +62,7 @@ body{
     font-size: 13px;
 }
 
-.nav-links ul li:hover::after{
-    width:100%;
-}
+
 .text-box{
     width: 90%;
     color: #fff;
@@ -97,4 +95,29 @@ body{
     border: 1px solid #f44336;
     background: #f44336;
     transition: 1s;
+}
+.summary {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.About-Me {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+.Work {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+.Contact-Me {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+.About-Me h2 {
+    margin-bottom: 10px;
+    text-align: center;
 }
