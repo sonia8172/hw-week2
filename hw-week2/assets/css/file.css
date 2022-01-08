@@ -1,10 +1,10 @@
 *{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 body{
     background-color: #ffffff;
+    margin: 0;
+    padding: 0;
 }
 .header{
     padding: 20px;
@@ -96,7 +96,7 @@ body{
     background: #f44336;
     transition: 1s;
 }
-.summary {
+.page-wrapper {
     margin-right: 20px;
     padding: 20px;
     clear: both;
